@@ -1,0 +1,10 @@
+<div style="padding-left: 150px;">
+   <div style="width: 365px; position: relative;"><span style="font-family: calibri, helvetica, sans-serif;"><strong style="color: #712d81;">Your Account Summary</strong></span></div>
+   <p><br /><span style="font-family: calibri, helvetica, sans-serif; font-size: 11pt;"><strong>Your Reference:&nbsp;</strong>{{customer.latest.FCCORE_reference.payload.reference}}</span></p>
+   <p><span style="font-size: 11pt; font-family: calibri, helvetica, sans-serif;"><strong>Original Creditor:&nbsp;</strong>{{! account.latest.FCCORE_creditor.payload.creditor}}{{#each account.latest}}{{#if @last}}{{FCCORE_creditor.payload.creditor}}{{/if}}{{/each}}</span></p>
+   <p><span style="font-family: calibri, helvetica, sans-serif; font-size: 11pt;"><strong>Outstanding Balance:&nbsp;</strong>{{currency customer.latest.CALCULATED_balance.payload.balance}}</span></p>
+   <p><span style="font-family: calibri, helvetica, sans-serif; font-size: 11pt;"><strong>Account Number:</strong>&nbsp;{{!account.latest.FCCORE_reference1.payload.reference1}}{{#each account.latest}}{{#if @last}}{{this.FCCORE_reference1.payload.reference1}}{{/if}}{{/each}}</span></p>
+   <p><span style="font-size: 11pt; font-family: calibri, helvetica, sans-serif;"><strong>Claim Number:</strong> {{customer.latest.FCCORE_legal.payload.caseReference}}</span></p>
+   <p><span style="font-size: 11pt; font-family: calibri, helvetica, sans-serif;"><strong>Online PIN:</strong> {{customer.latest.FCCORE_pin.payload.pin}}</span></p>
+</div>
+<p><img style="float: right;" src="https://tm-legalservices.co.uk/assets/emails/TrustPilotNew.png" alt="" width="245" height="72" /></p>
