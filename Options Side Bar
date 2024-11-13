@@ -1,0 +1,24 @@
+<div style="width: 740px; position: relative;">
+</div>
+<div style="width: 740px; position: relative; text-align: right;"><span style="font-family: calibri, helvetica, sans-serif; font-size: 11pt;">Date: {{addToDate 'today' 0 'days'}}</span></div>
+<div style="width: 740px; position: relative;">
+<span style="font-family: calibri, helvetica, sans-serif; font-size: 11pt;">
+  <img style="width: 651px; float: right; padding-left: 20px;" src="https://tm-legalservices.co.uk/assets/emails/FLetter/L3L1JP.png" height="708" /
+</span>
+
+<!--       -->
+<!-- insert body of template in this section -->
+<!--       -->
+
+
+<!-- this should be the very last thing in the template -->
+
+<div style="position: absolute; left: 500px; top: 470px; width: 200px; font-family: calibri, helvetica, sans-serif; font-size: 22px; font-weight: bold; color: #ffffff;">
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><span style="font-family: calibri, helvetica, sans-serif;">{{ customer.latest.CUSTOM_CustomerLetterFields.payload.InboundPhone3 }}&nbsp;</span></p>
+  <p>&nbsp;</p>
+  <p><span style="font-family: calibri, helvetica, sans-serif; font-size: 14pt; font-weight: bold;">Opening Hours:</span></p>
+  <p style="text-align: left;"><span style="font-size: 12pt;">{{ customer.latest.CUSTOM_CustomerLetterFields.payload.OpeningHours }}</span></p>
+</div>
+</div>
