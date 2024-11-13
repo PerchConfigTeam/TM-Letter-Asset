@@ -1,0 +1,5 @@
+<p>
+  <img style="width: 100%; display: block; margin-left: auto; margin-right: auto;" src="https://www.tm-legalservices.co.uk/assets/emails/BACKLETTER1.png" height="100%" />
+</p>
+<div style="position: absolute; left: 550px; top: 378px; font-family: arial; font-size: 22px; font-weight: bold;">{{customer.latest.FCCORE_reference.payload.reference}}
+</div>
